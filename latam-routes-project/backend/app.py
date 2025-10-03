@@ -19,9 +19,7 @@ G = nx.DiGraph()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ruta_json = os.path.join(BASE_DIR, "data", "airports.json")
 
-# -----------------------------
 # Fórmula Haversine (km entre coordenadas)
-# -----------------------------
 def haversine(lat1, lon1, lat2, lon2):
     R = 6371
     dlat = radians(lat2 - lat1)
