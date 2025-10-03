@@ -1,0 +1,2402 @@
+[
+  {
+    "code": "LIM",
+    "name": "Jorge Chávez International Airport",
+    "city": "Lima",
+    "country": "Peru",
+    "lat": -12.0219,
+    "lng": -77.1143
+  },
+  {
+    "code": "SCL",
+    "name": "Arturo Merino Benítez International Airport",
+    "city": "Santiago",
+    "country": "Chile",
+    "lat": -33.3929,
+    "lng": -70.7858
+  },
+  {
+    "code": "BOG",
+    "name": "El Dorado International Airport",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "lat": 4.7016,
+    "lng": -74.1469
+  },
+  {
+    "code": "GRU",
+    "name": "São Paulo–Guarulhos International Airport",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.4356,
+    "lng": -46.4731
+  },
+  {
+    "code": "EZE",
+    "name": "Ministro Pistarini International Airport",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.8222,
+    "lng": -58.5358
+  },
+  {
+    "code": "GYE",
+    "name": "José Joaquín de Olmedo International Airport",
+    "city": "Guayaquil",
+    "country": "Ecuador",
+    "lat": -2.1574,
+    "lng": -79.8836
+  },
+  {
+    "code": "UIO",
+    "name": "Mariscal Sucre International Airport",
+    "city": "Quito",
+    "country": "Ecuador",
+    "lat": -0.1292,
+    "lng": -78.3575
+  },
+  {
+    "code": "LPB",
+    "name": "El Alto International Airport",
+    "city": "La Paz",
+    "country": "Bolivia",
+    "lat": -16.5133,
+    "lng": -68.1923
+  },
+  {
+    "code": "ASU",
+    "name": "Silvio Pettirossi International Airport",
+    "city": "Asunción",
+    "country": "Paraguay",
+    "lat": -25.2399,
+    "lng": -57.5191
+  },
+  {
+    "code": "MEX",
+    "name": "Benito Juárez International Airport",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4361,
+    "lng": -99.0719
+  },
+  {
+    "code": "MIA",
+    "name": "Miami International Airport",
+    "city": "Miami",
+    "country": "USA",
+    "lat": 25.7933,
+    "lng": -80.2906
+  },
+  {
+    "code": "JFK",
+    "name": "John F. Kennedy International Airport",
+    "city": "New York",
+    "country": "USA",
+    "lat": 40.6413,
+    "lng": -73.7781
+  },
+  {
+    "code": "MAD",
+    "name": "Adolfo Suárez Madrid–Barajas Airport",
+    "city": "Madrid",
+    "country": "Spain",
+    "lat": 40.4983,
+    "lng": -3.5676
+  },
+  {
+    "code": "CDG",
+    "name": "Charles de Gaulle Airport",
+    "city": "Paris",
+    "country": "France",
+    "lat": 49.0097,
+    "lng": 2.5479
+  },
+  {
+    "code": "FRA",
+    "name": "Frankfurt Airport",
+    "city": "Frankfurt",
+    "country": "Germany",
+    "lat": 50.0379,
+    "lng": 8.5622
+  },
+  {
+    "code": "LHR",
+    "name": "London Heathrow Airport",
+    "city": "London",
+    "country": "UK",
+    "lat": 51.47,
+    "lng": -0.4543
+  },
+  {
+    "code": "A100",
+    "name": "Airport A100",
+    "city": "City A100",
+    "country": "Paraguay",
+    "lat": -6.7639,
+    "lng": -82.2305
+  },
+  {
+    "code": "A101",
+    "name": "Airport A101",
+    "city": "City A101",
+    "country": "Argentina",
+    "lat": -24.5791,
+    "lng": -38.2857
+  },
+  {
+    "code": "A102",
+    "name": "Airport A102",
+    "city": "City A102",
+    "country": "Peru",
+    "lat": 13.8772,
+    "lng": -50.0474
+  },
+  {
+    "code": "A103",
+    "name": "Airport A103",
+    "city": "City A103",
+    "country": "Paraguay",
+    "lat": -30.5064,
+    "lng": -62.8085
+  },
+  {
+    "code": "A104",
+    "name": "Airport A104",
+    "city": "City A104",
+    "country": "Ecuador",
+    "lat": 0.9142,
+    "lng": -42.0708
+  },
+  {
+    "code": "A105",
+    "name": "Airport A105",
+    "city": "City A105",
+    "country": "Uruguay",
+    "lat": -23.8393,
+    "lng": -75.4225
+  },
+  {
+    "code": "A106",
+    "name": "Airport A106",
+    "city": "City A106",
+    "country": "Chile",
+    "lat": 7.7678,
+    "lng": -76.7123
+  },
+  {
+    "code": "A107",
+    "name": "Airport A107",
+    "city": "City A107",
+    "country": "Mexico",
+    "lat": -25.6118,
+    "lng": -73.1018
+  },
+  {
+    "code": "A108",
+    "name": "Airport A108",
+    "city": "City A108",
+    "country": "Peru",
+    "lat": -21.1838,
+    "lng": -44.5139
+  },
+  {
+    "code": "A109",
+    "name": "Airport A109",
+    "city": "City A109",
+    "country": "Argentina",
+    "lat": -4.2617,
+    "lng": -59.1243
+  },
+  {
+    "code": "A110",
+    "name": "Airport A110",
+    "city": "City A110",
+    "country": "Colombia",
+    "lat": -10.5609,
+    "lng": -60.2606
+  },
+  {
+    "code": "A111",
+    "name": "Airport A111",
+    "city": "City A111",
+    "country": "Ecuador",
+    "lat": -7.1054,
+    "lng": -39.1706
+  },
+  {
+    "code": "A112",
+    "name": "Airport A112",
+    "city": "City A112",
+    "country": "Mexico",
+    "lat": -38.2327,
+    "lng": -64.4922
+  },
+  {
+    "code": "A113",
+    "name": "Airport A113",
+    "city": "City A113",
+    "country": "Uruguay",
+    "lat": -44.1861,
+    "lng": -70.8117
+  },
+  {
+    "code": "A114",
+    "name": "Airport A114",
+    "city": "City A114",
+    "country": "Ecuador",
+    "lat": -39.6918,
+    "lng": -55.2052
+  },
+  {
+    "code": "A115",
+    "name": "Airport A115",
+    "city": "City A115",
+    "country": "Ecuador",
+    "lat": -47.596,
+    "lng": -73.9746
+  },
+  {
+    "code": "A116",
+    "name": "Airport A116",
+    "city": "City A116",
+    "country": "Paraguay",
+    "lat": -51.4961,
+    "lng": -65.8209
+  },
+  {
+    "code": "A117",
+    "name": "Airport A117",
+    "city": "City A117",
+    "country": "Chile",
+    "lat": -46.2674,
+    "lng": -66.4456
+  },
+  {
+    "code": "A118",
+    "name": "Airport A118",
+    "city": "City A118",
+    "country": "Uruguay",
+    "lat": -19.0832,
+    "lng": -68.0082
+  },
+  {
+    "code": "A119",
+    "name": "Airport A119",
+    "city": "City A119",
+    "country": "Colombia",
+    "lat": 6.8418,
+    "lng": -51.45
+  },
+  {
+    "code": "A120",
+    "name": "Airport A120",
+    "city": "City A120",
+    "country": "Uruguay",
+    "lat": -48.525,
+    "lng": -35.2266
+  },
+  {
+    "code": "A121",
+    "name": "Airport A121",
+    "city": "City A121",
+    "country": "Chile",
+    "lat": -41.4978,
+    "lng": -45.7849
+  },
+  {
+    "code": "A122",
+    "name": "Airport A122",
+    "city": "City A122",
+    "country": "Bolivia",
+    "lat": -13.0464,
+    "lng": -54.808
+  },
+  {
+    "code": "A123",
+    "name": "Airport A123",
+    "city": "City A123",
+    "country": "Mexico",
+    "lat": -28.8627,
+    "lng": -38.9557
+  },
+  {
+    "code": "A124",
+    "name": "Airport A124",
+    "city": "City A124",
+    "country": "Argentina",
+    "lat": -38.8254,
+    "lng": -69.7534
+  },
+  {
+    "code": "A125",
+    "name": "Airport A125",
+    "city": "City A125",
+    "country": "Paraguay",
+    "lat": -30.4925,
+    "lng": -51.9876
+  },
+  {
+    "code": "A126",
+    "name": "Airport A126",
+    "city": "City A126",
+    "country": "Colombia",
+    "lat": 4.528,
+    "lng": -38.2694
+  },
+  {
+    "code": "A127",
+    "name": "Airport A127",
+    "city": "City A127",
+    "country": "Brazil",
+    "lat": -40.9339,
+    "lng": -57.3983
+  },
+  {
+    "code": "A128",
+    "name": "Airport A128",
+    "city": "City A128",
+    "country": "Argentina",
+    "lat": -42.3457,
+    "lng": -61.8512
+  },
+  {
+    "code": "A129",
+    "name": "Airport A129",
+    "city": "City A129",
+    "country": "Argentina",
+    "lat": -8.0154,
+    "lng": -43.2476
+  },
+  {
+    "code": "A130",
+    "name": "Airport A130",
+    "city": "City A130",
+    "country": "Ecuador",
+    "lat": 13.7229,
+    "lng": -38.575
+  },
+  {
+    "code": "A131",
+    "name": "Airport A131",
+    "city": "City A131",
+    "country": "Brazil",
+    "lat": -14.2363,
+    "lng": -65.6804
+  },
+  {
+    "code": "A132",
+    "name": "Airport A132",
+    "city": "City A132",
+    "country": "Paraguay",
+    "lat": -54.437,
+    "lng": -81.2771
+  },
+  {
+    "code": "A133",
+    "name": "Airport A133",
+    "city": "City A133",
+    "country": "Argentina",
+    "lat": -30.3514,
+    "lng": -42.095
+  },
+  {
+    "code": "A134",
+    "name": "Airport A134",
+    "city": "City A134",
+    "country": "Uruguay",
+    "lat": -13.2123,
+    "lng": -60.9069
+  },
+  {
+    "code": "A135",
+    "name": "Airport A135",
+    "city": "City A135",
+    "country": "Uruguay",
+    "lat": -43.8496,
+    "lng": -53.2869
+  },
+  {
+    "code": "A136",
+    "name": "Airport A136",
+    "city": "City A136",
+    "country": "Uruguay",
+    "lat": -34.3072,
+    "lng": -69.19
+  },
+  {
+    "code": "A137",
+    "name": "Airport A137",
+    "city": "City A137",
+    "country": "Peru",
+    "lat": -33.3416,
+    "lng": -43.6417
+  },
+  {
+    "code": "A138",
+    "name": "Airport A138",
+    "city": "City A138",
+    "country": "Colombia",
+    "lat": -13.2028,
+    "lng": -55.6267
+  },
+  {
+    "code": "A139",
+    "name": "Airport A139",
+    "city": "City A139",
+    "country": "Uruguay",
+    "lat": -25.4713,
+    "lng": -59.5358
+  },
+  {
+    "code": "A140",
+    "name": "Airport A140",
+    "city": "City A140",
+    "country": "Chile",
+    "lat": -15.289,
+    "lng": -71.7818
+  },
+  {
+    "code": "A141",
+    "name": "Airport A141",
+    "city": "City A141",
+    "country": "Bolivia",
+    "lat": -48.0413,
+    "lng": -74.8524
+  },
+  {
+    "code": "A142",
+    "name": "Airport A142",
+    "city": "City A142",
+    "country": "Ecuador",
+    "lat": -24.5069,
+    "lng": -80.0037
+  },
+  {
+    "code": "A143",
+    "name": "Airport A143",
+    "city": "City A143",
+    "country": "Ecuador",
+    "lat": 8.9887,
+    "lng": -37.5088
+  },
+  {
+    "code": "A144",
+    "name": "Airport A144",
+    "city": "City A144",
+    "country": "Chile",
+    "lat": -16.9846,
+    "lng": -75.4783
+  },
+  {
+    "code": "A145",
+    "name": "Airport A145",
+    "city": "City A145",
+    "country": "Uruguay",
+    "lat": 4.4382,
+    "lng": -75.8482
+  },
+  {
+    "code": "A146",
+    "name": "Airport A146",
+    "city": "City A146",
+    "country": "Argentina",
+    "lat": 0.4124,
+    "lng": -59.2544
+  },
+  {
+    "code": "A147",
+    "name": "Airport A147",
+    "city": "City A147",
+    "country": "Uruguay",
+    "lat": 7.1715,
+    "lng": -58.8681
+  },
+  {
+    "code": "A148",
+    "name": "Airport A148",
+    "city": "City A148",
+    "country": "Paraguay",
+    "lat": -18.8454,
+    "lng": -53.4232
+  },
+  {
+    "code": "A149",
+    "name": "Airport A149",
+    "city": "City A149",
+    "country": "Chile",
+    "lat": 7.0808,
+    "lng": -68.5884
+  },
+  {
+    "code": "A150",
+    "name": "Airport A150",
+    "city": "City A150",
+    "country": "Bolivia",
+    "lat": -15.3369,
+    "lng": -80.9775
+  },
+  {
+    "code": "A151",
+    "name": "Airport A151",
+    "city": "City A151",
+    "country": "Argentina",
+    "lat": -53.4814,
+    "lng": -48.187
+  },
+  {
+    "code": "A152",
+    "name": "Airport A152",
+    "city": "City A152",
+    "country": "Argentina",
+    "lat": -54.4306,
+    "lng": -49.9053
+  },
+  {
+    "code": "A153",
+    "name": "Airport A153",
+    "city": "City A153",
+    "country": "Colombia",
+    "lat": 11.812,
+    "lng": -63.3529
+  },
+  {
+    "code": "A154",
+    "name": "Airport A154",
+    "city": "City A154",
+    "country": "Ecuador",
+    "lat": -39.024,
+    "lng": -71.2129
+  },
+  {
+    "code": "A155",
+    "name": "Airport A155",
+    "city": "City A155",
+    "country": "Mexico",
+    "lat": -20.7929,
+    "lng": -38.8756
+  },
+  {
+    "code": "A156",
+    "name": "Airport A156",
+    "city": "City A156",
+    "country": "Paraguay",
+    "lat": 1.46,
+    "lng": -44.2613
+  },
+  {
+    "code": "A157",
+    "name": "Airport A157",
+    "city": "City A157",
+    "country": "Peru",
+    "lat": -41.774,
+    "lng": -82.8202
+  },
+  {
+    "code": "A158",
+    "name": "Airport A158",
+    "city": "City A158",
+    "country": "Ecuador",
+    "lat": 8.9615,
+    "lng": -78.3922
+  },
+  {
+    "code": "A159",
+    "name": "Airport A159",
+    "city": "City A159",
+    "country": "Ecuador",
+    "lat": -3.7491,
+    "lng": -61.58
+  },
+  {
+    "code": "A160",
+    "name": "Airport A160",
+    "city": "City A160",
+    "country": "Chile",
+    "lat": -27.2112,
+    "lng": -49.2982
+  },
+  {
+    "code": "A161",
+    "name": "Airport A161",
+    "city": "City A161",
+    "country": "Peru",
+    "lat": -42.2714,
+    "lng": -38.4819
+  },
+  {
+    "code": "A162",
+    "name": "Airport A162",
+    "city": "City A162",
+    "country": "Colombia",
+    "lat": 7.3349,
+    "lng": -40.9388
+  },
+  {
+    "code": "A163",
+    "name": "Airport A163",
+    "city": "City A163",
+    "country": "Bolivia",
+    "lat": 0.2,
+    "lng": -54.2417
+  },
+  {
+    "code": "A164",
+    "name": "Airport A164",
+    "city": "City A164",
+    "country": "Colombia",
+    "lat": -48.6716,
+    "lng": -43.5011
+  },
+  {
+    "code": "A165",
+    "name": "Airport A165",
+    "city": "City A165",
+    "country": "Ecuador",
+    "lat": -42.6318,
+    "lng": -51.0694
+  },
+  {
+    "code": "A166",
+    "name": "Airport A166",
+    "city": "City A166",
+    "country": "Mexico",
+    "lat": -46.9923,
+    "lng": -73.1643
+  },
+  {
+    "code": "A167",
+    "name": "Airport A167",
+    "city": "City A167",
+    "country": "Bolivia",
+    "lat": -9.7561,
+    "lng": -55.2454
+  },
+  {
+    "code": "A168",
+    "name": "Airport A168",
+    "city": "City A168",
+    "country": "Colombia",
+    "lat": 12.7164,
+    "lng": -64.5816
+  },
+  {
+    "code": "A169",
+    "name": "Airport A169",
+    "city": "City A169",
+    "country": "Ecuador",
+    "lat": -28.3812,
+    "lng": -45.7388
+  },
+  {
+    "code": "A170",
+    "name": "Airport A170",
+    "city": "City A170",
+    "country": "Bolivia",
+    "lat": 6.4859,
+    "lng": -71.8247
+  },
+  {
+    "code": "A171",
+    "name": "Airport A171",
+    "city": "City A171",
+    "country": "Bolivia",
+    "lat": -39.8016,
+    "lng": -40.0848
+  },
+  {
+    "code": "A172",
+    "name": "Airport A172",
+    "city": "City A172",
+    "country": "Colombia",
+    "lat": -20.893,
+    "lng": -82.3807
+  },
+  {
+    "code": "A173",
+    "name": "Airport A173",
+    "city": "City A173",
+    "country": "Peru",
+    "lat": -40.0195,
+    "lng": -74.9963
+  },
+  {
+    "code": "A174",
+    "name": "Airport A174",
+    "city": "City A174",
+    "country": "Mexico",
+    "lat": -12.3477,
+    "lng": -57.1582
+  },
+  {
+    "code": "A175",
+    "name": "Airport A175",
+    "city": "City A175",
+    "country": "Mexico",
+    "lat": -16.8548,
+    "lng": -45.241
+  },
+  {
+    "code": "A176",
+    "name": "Airport A176",
+    "city": "City A176",
+    "country": "Brazil",
+    "lat": -21.6863,
+    "lng": -46.9244
+  },
+  {
+    "code": "A177",
+    "name": "Airport A177",
+    "city": "City A177",
+    "country": "Uruguay",
+    "lat": -10.0142,
+    "lng": -51.5879
+  },
+  {
+    "code": "A178",
+    "name": "Airport A178",
+    "city": "City A178",
+    "country": "Colombia",
+    "lat": -48.5331,
+    "lng": -66.0534
+  },
+  {
+    "code": "A179",
+    "name": "Airport A179",
+    "city": "City A179",
+    "country": "Colombia",
+    "lat": -46.0121,
+    "lng": -60.2343
+  },
+  {
+    "code": "A180",
+    "name": "Airport A180",
+    "city": "City A180",
+    "country": "Colombia",
+    "lat": -15.3124,
+    "lng": -43.3075
+  },
+  {
+    "code": "A181",
+    "name": "Airport A181",
+    "city": "City A181",
+    "country": "Uruguay",
+    "lat": -25.4358,
+    "lng": -54.2443
+  },
+  {
+    "code": "A182",
+    "name": "Airport A182",
+    "city": "City A182",
+    "country": "Argentina",
+    "lat": 2.9348,
+    "lng": -42.6164
+  },
+  {
+    "code": "A183",
+    "name": "Airport A183",
+    "city": "City A183",
+    "country": "Peru",
+    "lat": -2.7301,
+    "lng": -82.3768
+  },
+  {
+    "code": "A184",
+    "name": "Airport A184",
+    "city": "City A184",
+    "country": "Mexico",
+    "lat": -18.611,
+    "lng": -48.2929
+  },
+  {
+    "code": "A185",
+    "name": "Airport A185",
+    "city": "City A185",
+    "country": "Peru",
+    "lat": -9.6094,
+    "lng": -40.6235
+  },
+  {
+    "code": "A186",
+    "name": "Airport A186",
+    "city": "City A186",
+    "country": "Peru",
+    "lat": -16.1289,
+    "lng": -46.5067
+  },
+  {
+    "code": "A187",
+    "name": "Airport A187",
+    "city": "City A187",
+    "country": "Argentina",
+    "lat": -30.1858,
+    "lng": -66.8999
+  },
+  {
+    "code": "A188",
+    "name": "Airport A188",
+    "city": "City A188",
+    "country": "Brazil",
+    "lat": 9.6269,
+    "lng": -75.497
+  },
+  {
+    "code": "A189",
+    "name": "Airport A189",
+    "city": "City A189",
+    "country": "Brazil",
+    "lat": -26.2306,
+    "lng": -63.0333
+  },
+  {
+    "code": "A190",
+    "name": "Airport A190",
+    "city": "City A190",
+    "country": "Chile",
+    "lat": -14.2741,
+    "lng": -41.076
+  },
+  {
+    "code": "A191",
+    "name": "Airport A191",
+    "city": "City A191",
+    "country": "Brazil",
+    "lat": -28.5269,
+    "lng": -35.1421
+  },
+  {
+    "code": "A192",
+    "name": "Airport A192",
+    "city": "City A192",
+    "country": "Uruguay",
+    "lat": -42.6747,
+    "lng": -43.0124
+  },
+  {
+    "code": "A193",
+    "name": "Airport A193",
+    "city": "City A193",
+    "country": "Mexico",
+    "lat": -50.2522,
+    "lng": -79.3614
+  },
+  {
+    "code": "A200",
+    "name": "Airport A200",
+    "city": "City A200",
+    "country": "USA",
+    "lat": 42.7369,
+    "lng": -109.1223
+  },
+  {
+    "code": "A201",
+    "name": "Airport A201",
+    "city": "City A201",
+    "country": "USA",
+    "lat": 34.0948,
+    "lng": -110.3932
+  },
+  {
+    "code": "A202",
+    "name": "Airport A202",
+    "city": "City A202",
+    "country": "USA",
+    "lat": 25.0158,
+    "lng": -79.5894
+  },
+  {
+    "code": "A203",
+    "name": "Airport A203",
+    "city": "City A203",
+    "country": "USA",
+    "lat": 40.2311,
+    "lng": -91.6965
+  },
+  {
+    "code": "A204",
+    "name": "Airport A204",
+    "city": "City A204",
+    "country": "USA",
+    "lat": 41.0636,
+    "lng": -96.474
+  },
+  {
+    "code": "A205",
+    "name": "Airport A205",
+    "city": "City A205",
+    "country": "USA",
+    "lat": 37.1118,
+    "lng": -120.1764
+  },
+  {
+    "code": "A206",
+    "name": "Airport A206",
+    "city": "City A206",
+    "country": "USA",
+    "lat": 34.3743,
+    "lng": -85.8256
+  },
+  {
+    "code": "A207",
+    "name": "Airport A207",
+    "city": "City A207",
+    "country": "USA",
+    "lat": 45.1918,
+    "lng": -124.0231
+  },
+  {
+    "code": "A208",
+    "name": "Airport A208",
+    "city": "City A208",
+    "country": "USA",
+    "lat": 45.9414,
+    "lng": -81.7957
+  },
+  {
+    "code": "A209",
+    "name": "Airport A209",
+    "city": "City A209",
+    "country": "USA",
+    "lat": 47.0301,
+    "lng": -92.5019
+  },
+  {
+    "code": "A210",
+    "name": "Airport A210",
+    "city": "City A210",
+    "country": "USA",
+    "lat": 37.062,
+    "lng": -86.2339
+  },
+  {
+    "code": "A211",
+    "name": "Airport A211",
+    "city": "City A211",
+    "country": "USA",
+    "lat": 27.8112,
+    "lng": -123.6092
+  },
+  {
+    "code": "A212",
+    "name": "Airport A212",
+    "city": "City A212",
+    "country": "USA",
+    "lat": 35.3285,
+    "lng": -116.5474
+  },
+  {
+    "code": "A213",
+    "name": "Airport A213",
+    "city": "City A213",
+    "country": "USA",
+    "lat": 45.0606,
+    "lng": -77.1968
+  },
+  {
+    "code": "A214",
+    "name": "Airport A214",
+    "city": "City A214",
+    "country": "USA",
+    "lat": 38.8893,
+    "lng": -78.7255
+  },
+  {
+    "code": "A215",
+    "name": "Airport A215",
+    "city": "City A215",
+    "country": "USA",
+    "lat": 28.6728,
+    "lng": -102.1624
+  },
+  {
+    "code": "A216",
+    "name": "Airport A216",
+    "city": "City A216",
+    "country": "USA",
+    "lat": 34.8684,
+    "lng": -71.9575
+  },
+  {
+    "code": "A217",
+    "name": "Airport A217",
+    "city": "City A217",
+    "country": "USA",
+    "lat": 28.9153,
+    "lng": -78.6978
+  },
+  {
+    "code": "A218",
+    "name": "Airport A218",
+    "city": "City A218",
+    "country": "USA",
+    "lat": 43.4933,
+    "lng": -90.2976
+  },
+  {
+    "code": "A219",
+    "name": "Airport A219",
+    "city": "City A219",
+    "country": "USA",
+    "lat": 45.0496,
+    "lng": -119.4435
+  },
+  {
+    "code": "A220",
+    "name": "Airport A220",
+    "city": "City A220",
+    "country": "USA",
+    "lat": 40.147,
+    "lng": -118.2262
+  },
+  {
+    "code": "A221",
+    "name": "Airport A221",
+    "city": "City A221",
+    "country": "USA",
+    "lat": 40.6514,
+    "lng": -92.8706
+  },
+  {
+    "code": "A222",
+    "name": "Airport A222",
+    "city": "City A222",
+    "country": "USA",
+    "lat": 36.8538,
+    "lng": -82.3722
+  },
+  {
+    "code": "A223",
+    "name": "Airport A223",
+    "city": "City A223",
+    "country": "USA",
+    "lat": 47.5612,
+    "lng": -89.8513
+  },
+  {
+    "code": "A224",
+    "name": "Airport A224",
+    "city": "City A224",
+    "country": "USA",
+    "lat": 40.8765,
+    "lng": -69.6072
+  },
+  {
+    "code": "A225",
+    "name": "Airport A225",
+    "city": "City A225",
+    "country": "USA",
+    "lat": 28.0148,
+    "lng": -72.8735
+  },
+  {
+    "code": "A226",
+    "name": "Airport A226",
+    "city": "City A226",
+    "country": "USA",
+    "lat": 42.3543,
+    "lng": -104.3382
+  },
+  {
+    "code": "A227",
+    "name": "Airport A227",
+    "city": "City A227",
+    "country": "USA",
+    "lat": 26.0469,
+    "lng": -69.6118
+  },
+  {
+    "code": "A228",
+    "name": "Airport A228",
+    "city": "City A228",
+    "country": "USA",
+    "lat": 32.5339,
+    "lng": -112.4806
+  },
+  {
+    "code": "A229",
+    "name": "Airport A229",
+    "city": "City A229",
+    "country": "USA",
+    "lat": 27.2991,
+    "lng": -68.4887
+  },
+  {
+    "code": "A230",
+    "name": "Airport A230",
+    "city": "City A230",
+    "country": "USA",
+    "lat": 37.7938,
+    "lng": -104.4003
+  },
+  {
+    "code": "A231",
+    "name": "Airport A231",
+    "city": "City A231",
+    "country": "USA",
+    "lat": 46.7466,
+    "lng": -114.4496
+  },
+  {
+    "code": "A232",
+    "name": "Airport A232",
+    "city": "City A232",
+    "country": "USA",
+    "lat": 26.8854,
+    "lng": -86.2092
+  },
+  {
+    "code": "A233",
+    "name": "Airport A233",
+    "city": "City A233",
+    "country": "USA",
+    "lat": 45.711,
+    "lng": -80.6207
+  },
+  {
+    "code": "A234",
+    "name": "Airport A234",
+    "city": "City A234",
+    "country": "USA",
+    "lat": 44.3473,
+    "lng": -80.2952
+  },
+  {
+    "code": "A235",
+    "name": "Airport A235",
+    "city": "City A235",
+    "country": "USA",
+    "lat": 37.3184,
+    "lng": -69.9262
+  },
+  {
+    "code": "A236",
+    "name": "Airport A236",
+    "city": "City A236",
+    "country": "USA",
+    "lat": 32.4421,
+    "lng": -120.9156
+  },
+  {
+    "code": "A237",
+    "name": "Airport A237",
+    "city": "City A237",
+    "country": "USA",
+    "lat": 35.2623,
+    "lng": -77.3633
+  },
+  {
+    "code": "A238",
+    "name": "Airport A238",
+    "city": "City A238",
+    "country": "USA",
+    "lat": 35.0509,
+    "lng": -108.2309
+  },
+  {
+    "code": "A239",
+    "name": "Airport A239",
+    "city": "City A239",
+    "country": "USA",
+    "lat": 37.621,
+    "lng": -106.3696
+  },
+  {
+    "code": "A240",
+    "name": "Airport A240",
+    "city": "City A240",
+    "country": "USA",
+    "lat": 27.8399,
+    "lng": -83.384
+  },
+  {
+    "code": "A241",
+    "name": "Airport A241",
+    "city": "City A241",
+    "country": "USA",
+    "lat": 27.8242,
+    "lng": -102.3474
+  },
+  {
+    "code": "A242",
+    "name": "Airport A242",
+    "city": "City A242",
+    "country": "USA",
+    "lat": 34.1207,
+    "lng": -105.3579
+  },
+  {
+    "code": "A243",
+    "name": "Airport A243",
+    "city": "City A243",
+    "country": "USA",
+    "lat": 27.2442,
+    "lng": -75.3203
+  },
+  {
+    "code": "A244",
+    "name": "Airport A244",
+    "city": "City A244",
+    "country": "USA",
+    "lat": 34.2026,
+    "lng": -114.423
+  },
+  {
+    "code": "A245",
+    "name": "Airport A245",
+    "city": "City A245",
+    "country": "USA",
+    "lat": 27.3995,
+    "lng": -109.1888
+  },
+  {
+    "code": "A246",
+    "name": "Airport A246",
+    "city": "City A246",
+    "country": "USA",
+    "lat": 27.1722,
+    "lng": -98.0706
+  },
+  {
+    "code": "A247",
+    "name": "Airport A247",
+    "city": "City A247",
+    "country": "USA",
+    "lat": 48.8923,
+    "lng": -118.938
+  },
+  {
+    "code": "A248",
+    "name": "Airport A248",
+    "city": "City A248",
+    "country": "USA",
+    "lat": 47.3123,
+    "lng": -69.037
+  },
+  {
+    "code": "A249",
+    "name": "Airport A249",
+    "city": "City A249",
+    "country": "USA",
+    "lat": 36.8492,
+    "lng": -77.7426
+  },
+  {
+    "code": "A250",
+    "name": "Airport A250",
+    "city": "City A250",
+    "country": "USA",
+    "lat": 25.6964,
+    "lng": -95.3348
+  },
+  {
+    "code": "A251",
+    "name": "Airport A251",
+    "city": "City A251",
+    "country": "USA",
+    "lat": 27.5961,
+    "lng": -67.9821
+  },
+  {
+    "code": "A252",
+    "name": "Airport A252",
+    "city": "City A252",
+    "country": "USA",
+    "lat": 42.4421,
+    "lng": -119.5884
+  },
+  {
+    "code": "A253",
+    "name": "Airport A253",
+    "city": "City A253",
+    "country": "USA",
+    "lat": 28.0047,
+    "lng": -79.4467
+  },
+  {
+    "code": "A254",
+    "name": "Airport A254",
+    "city": "City A254",
+    "country": "USA",
+    "lat": 41.5498,
+    "lng": -98.2648
+  },
+  {
+    "code": "A255",
+    "name": "Airport A255",
+    "city": "City A255",
+    "country": "USA",
+    "lat": 48.4054,
+    "lng": -71.6314
+  },
+  {
+    "code": "A256",
+    "name": "Airport A256",
+    "city": "City A256",
+    "country": "USA",
+    "lat": 30.9133,
+    "lng": -112.4381
+  },
+  {
+    "code": "A257",
+    "name": "Airport A257",
+    "city": "City A257",
+    "country": "USA",
+    "lat": 42.7879,
+    "lng": -116.0656
+  },
+  {
+    "code": "A258",
+    "name": "Airport A258",
+    "city": "City A258",
+    "country": "USA",
+    "lat": 47.2542,
+    "lng": -81.9077
+  },
+  {
+    "code": "A259",
+    "name": "Airport A259",
+    "city": "City A259",
+    "country": "USA",
+    "lat": 43.2188,
+    "lng": -72.1829
+  },
+  {
+    "code": "A260",
+    "name": "Airport A260",
+    "city": "City A260",
+    "country": "USA",
+    "lat": 48.8208,
+    "lng": -109.2354
+  },
+  {
+    "code": "A261",
+    "name": "Airport A261",
+    "city": "City A261",
+    "country": "USA",
+    "lat": 48.4422,
+    "lng": -96.1016
+  },
+  {
+    "code": "A262",
+    "name": "Airport A262",
+    "city": "City A262",
+    "country": "USA",
+    "lat": 43.1677,
+    "lng": -89.5387
+  },
+  {
+    "code": "A263",
+    "name": "Airport A263",
+    "city": "City A263",
+    "country": "USA",
+    "lat": 48.9295,
+    "lng": -111.759
+  },
+  {
+    "code": "A264",
+    "name": "Airport A264",
+    "city": "City A264",
+    "country": "USA",
+    "lat": 42.0166,
+    "lng": -100.5474
+  },
+  {
+    "code": "A265",
+    "name": "Airport A265",
+    "city": "City A265",
+    "country": "USA",
+    "lat": 47.5709,
+    "lng": -96.3171
+  },
+  {
+    "code": "A266",
+    "name": "Airport A266",
+    "city": "City A266",
+    "country": "USA",
+    "lat": 38.9408,
+    "lng": -108.7187
+  },
+  {
+    "code": "A267",
+    "name": "Airport A267",
+    "city": "City A267",
+    "country": "USA",
+    "lat": 30.7723,
+    "lng": -88.7793
+  },
+  {
+    "code": "A268",
+    "name": "Airport A268",
+    "city": "City A268",
+    "country": "USA",
+    "lat": 31.1963,
+    "lng": -90.4913
+  },
+  {
+    "code": "A269",
+    "name": "Airport A269",
+    "city": "City A269",
+    "country": "USA",
+    "lat": 36.7104,
+    "lng": -96.9248
+  },
+  {
+    "code": "A270",
+    "name": "Airport A270",
+    "city": "City A270",
+    "country": "USA",
+    "lat": 31.7101,
+    "lng": -120.0534
+  },
+  {
+    "code": "A271",
+    "name": "Airport A271",
+    "city": "City A271",
+    "country": "USA",
+    "lat": 34.8978,
+    "lng": -98.881
+  },
+  {
+    "code": "A272",
+    "name": "Airport A272",
+    "city": "City A272",
+    "country": "USA",
+    "lat": 45.6104,
+    "lng": -110.875
+  },
+  {
+    "code": "A273",
+    "name": "Airport A273",
+    "city": "City A273",
+    "country": "USA",
+    "lat": 33.9615,
+    "lng": -118.8303
+  },
+  {
+    "code": "A274",
+    "name": "Airport A274",
+    "city": "City A274",
+    "country": "USA",
+    "lat": 35.5804,
+    "lng": -93.3697
+  },
+  {
+    "code": "A275",
+    "name": "Airport A275",
+    "city": "City A275",
+    "country": "USA",
+    "lat": 37.6953,
+    "lng": -111.204
+  },
+  {
+    "code": "A276",
+    "name": "Airport A276",
+    "city": "City A276",
+    "country": "USA",
+    "lat": 40.8512,
+    "lng": -100.5659
+  },
+  {
+    "code": "A277",
+    "name": "Airport A277",
+    "city": "City A277",
+    "country": "USA",
+    "lat": 41.9757,
+    "lng": -118.6243
+  },
+  {
+    "code": "A278",
+    "name": "Airport A278",
+    "city": "City A278",
+    "country": "USA",
+    "lat": 37.4057,
+    "lng": -115.1471
+  },
+  {
+    "code": "A279",
+    "name": "Airport A279",
+    "city": "City A279",
+    "country": "USA",
+    "lat": 27.5949,
+    "lng": -74.3039
+  },
+  {
+    "code": "A280",
+    "name": "Airport A280",
+    "city": "City A280",
+    "country": "USA",
+    "lat": 31.9621,
+    "lng": -95.4461
+  },
+  {
+    "code": "A281",
+    "name": "Airport A281",
+    "city": "City A281",
+    "country": "USA",
+    "lat": 39.4676,
+    "lng": -71.337
+  },
+  {
+    "code": "A282",
+    "name": "Airport A282",
+    "city": "City A282",
+    "country": "USA",
+    "lat": 40.2599,
+    "lng": -82.5018
+  },
+  {
+    "code": "A283",
+    "name": "Airport A283",
+    "city": "City A283",
+    "country": "USA",
+    "lat": 40.4526,
+    "lng": -81.491
+  },
+  {
+    "code": "A284",
+    "name": "Airport A284",
+    "city": "City A284",
+    "country": "USA",
+    "lat": 46.9684,
+    "lng": -118.3941
+  },
+  {
+    "code": "A285",
+    "name": "Airport A285",
+    "city": "City A285",
+    "country": "USA",
+    "lat": 36.6781,
+    "lng": -74.9495
+  },
+  {
+    "code": "A286",
+    "name": "Airport A286",
+    "city": "City A286",
+    "country": "USA",
+    "lat": 39.9651,
+    "lng": -93.0669
+  },
+  {
+    "code": "A287",
+    "name": "Airport A287",
+    "city": "City A287",
+    "country": "USA",
+    "lat": 35.7047,
+    "lng": -109.3831
+  },
+  {
+    "code": "A288",
+    "name": "Airport A288",
+    "city": "City A288",
+    "country": "USA",
+    "lat": 42.6037,
+    "lng": -106.1049
+  },
+  {
+    "code": "A289",
+    "name": "Airport A289",
+    "city": "City A289",
+    "country": "USA",
+    "lat": 42.3088,
+    "lng": -93.2791
+  },
+  {
+    "code": "A290",
+    "name": "Airport A290",
+    "city": "City A290",
+    "country": "USA",
+    "lat": 33.2486,
+    "lng": -109.9472
+  },
+  {
+    "code": "A291",
+    "name": "Airport A291",
+    "city": "City A291",
+    "country": "USA",
+    "lat": 33.044,
+    "lng": -70.0764
+  },
+  {
+    "code": "A292",
+    "name": "Airport A292",
+    "city": "City A292",
+    "country": "USA",
+    "lat": 41.078,
+    "lng": -103.2562
+  },
+  {
+    "code": "A293",
+    "name": "Airport A293",
+    "city": "City A293",
+    "country": "USA",
+    "lat": 44.693,
+    "lng": -85.3539
+  },
+  {
+    "code": "A300",
+    "name": "Airport A300",
+    "city": "City A300",
+    "country": "Spain",
+    "lat": 47.9632,
+    "lng": 17.8745
+  },
+  {
+    "code": "A301",
+    "name": "Airport A301",
+    "city": "City A301",
+    "country": "UK",
+    "lat": 41.8247,
+    "lng": 2.1727
+  },
+  {
+    "code": "A302",
+    "name": "Airport A302",
+    "city": "City A302",
+    "country": "France",
+    "lat": 51.599,
+    "lng": 7.4367
+  },
+  {
+    "code": "A303",
+    "name": "Airport A303",
+    "city": "City A303",
+    "country": "Italy",
+    "lat": 47.9999,
+    "lng": 20.9389
+  },
+  {
+    "code": "A304",
+    "name": "Airport A304",
+    "city": "City A304",
+    "country": "Italy",
+    "lat": 48.5608,
+    "lng": 21.4566
+  },
+  {
+    "code": "A305",
+    "name": "Airport A305",
+    "city": "City A305",
+    "country": "Germany",
+    "lat": 45.9771,
+    "lng": 23.5811
+  },
+  {
+    "code": "A306",
+    "name": "Airport A306",
+    "city": "City A306",
+    "country": "UK",
+    "lat": 39.4906,
+    "lng": 28.9587
+  },
+  {
+    "code": "A307",
+    "name": "Airport A307",
+    "city": "City A307",
+    "country": "UK",
+    "lat": 58.9395,
+    "lng": -1.8812
+  },
+  {
+    "code": "A308",
+    "name": "Airport A308",
+    "city": "City A308",
+    "country": "Germany",
+    "lat": 37.6378,
+    "lng": 4.1995
+  },
+  {
+    "code": "A309",
+    "name": "Airport A309",
+    "city": "City A309",
+    "country": "France",
+    "lat": 54.5158,
+    "lng": -4.0235
+  },
+  {
+    "code": "A310",
+    "name": "Airport A310",
+    "city": "City A310",
+    "country": "Italy",
+    "lat": 36.0401,
+    "lng": -8.507
+  },
+  {
+    "code": "A311",
+    "name": "Airport A311",
+    "city": "City A311",
+    "country": "Spain",
+    "lat": 55.5784,
+    "lng": 9.6241
+  },
+  {
+    "code": "A312",
+    "name": "Airport A312",
+    "city": "City A312",
+    "country": "France",
+    "lat": 49.1962,
+    "lng": 15.5212
+  },
+  {
+    "code": "A313",
+    "name": "Airport A313",
+    "city": "City A313",
+    "country": "France",
+    "lat": 48.4366,
+    "lng": -6.7707
+  },
+  {
+    "code": "A314",
+    "name": "Airport A314",
+    "city": "City A314",
+    "country": "Germany",
+    "lat": 48.9697,
+    "lng": 1.2285
+  },
+  {
+    "code": "A315",
+    "name": "Airport A315",
+    "city": "City A315",
+    "country": "Germany",
+    "lat": 47.5679,
+    "lng": -5.5049
+  },
+  {
+    "code": "A316",
+    "name": "Airport A316",
+    "city": "City A316",
+    "country": "France",
+    "lat": 57.1916,
+    "lng": 10.0321
+  },
+  {
+    "code": "A317",
+    "name": "Airport A317",
+    "city": "City A317",
+    "country": "Germany",
+    "lat": 42.4098,
+    "lng": -8.5433
+  },
+  {
+    "code": "A318",
+    "name": "Airport A318",
+    "city": "City A318",
+    "country": "UK",
+    "lat": 44.8134,
+    "lng": 12.0199
+  },
+  {
+    "code": "A319",
+    "name": "Airport A319",
+    "city": "City A319",
+    "country": "Italy",
+    "lat": 41.3353,
+    "lng": 23.8347
+  },
+  {
+    "code": "A320",
+    "name": "Airport A320",
+    "city": "City A320",
+    "country": "France",
+    "lat": 42.8915,
+    "lng": 13.5981
+  },
+  {
+    "code": "A321",
+    "name": "Airport A321",
+    "city": "City A321",
+    "country": "UK",
+    "lat": 59.2948,
+    "lng": -4.0243
+  },
+  {
+    "code": "A322",
+    "name": "Airport A322",
+    "city": "City A322",
+    "country": "UK",
+    "lat": 48.2726,
+    "lng": 2.3407
+  },
+  {
+    "code": "A323",
+    "name": "Airport A323",
+    "city": "City A323",
+    "country": "France",
+    "lat": 41.075,
+    "lng": -2.5711
+  },
+  {
+    "code": "A324",
+    "name": "Airport A324",
+    "city": "City A324",
+    "country": "Italy",
+    "lat": 53.4901,
+    "lng": -4.362
+  },
+  {
+    "code": "A325",
+    "name": "Airport A325",
+    "city": "City A325",
+    "country": "France",
+    "lat": 35.2303,
+    "lng": 17.8262
+  },
+  {
+    "code": "A326",
+    "name": "Airport A326",
+    "city": "City A326",
+    "country": "UK",
+    "lat": 37.9887,
+    "lng": -5.8235
+  },
+  {
+    "code": "A327",
+    "name": "Airport A327",
+    "city": "City A327",
+    "country": "Spain",
+    "lat": 42.7335,
+    "lng": 0.1503
+  },
+  {
+    "code": "A328",
+    "name": "Airport A328",
+    "city": "City A328",
+    "country": "Spain",
+    "lat": 54.6368,
+    "lng": 29.7102
+  },
+  {
+    "code": "A329",
+    "name": "Airport A329",
+    "city": "City A329",
+    "country": "France",
+    "lat": 49.9309,
+    "lng": 13.6142
+  },
+  {
+    "code": "A330",
+    "name": "Airport A330",
+    "city": "City A330",
+    "country": "Germany",
+    "lat": 48.0009,
+    "lng": 21.448
+  },
+  {
+    "code": "A331",
+    "name": "Airport A331",
+    "city": "City A331",
+    "country": "UK",
+    "lat": 48.0689,
+    "lng": 4.7354
+  },
+  {
+    "code": "A332",
+    "name": "Airport A332",
+    "city": "City A332",
+    "country": "Italy",
+    "lat": 49.179,
+    "lng": 6.9459
+  },
+  {
+    "code": "A333",
+    "name": "Airport A333",
+    "city": "City A333",
+    "country": "France",
+    "lat": 58.4424,
+    "lng": 19.3997
+  },
+  {
+    "code": "A334",
+    "name": "Airport A334",
+    "city": "City A334",
+    "country": "Spain",
+    "lat": 41.9559,
+    "lng": 24.9839
+  },
+  {
+    "code": "A335",
+    "name": "Airport A335",
+    "city": "City A335",
+    "country": "Italy",
+    "lat": 58.7243,
+    "lng": -0.9134
+  },
+  {
+    "code": "A336",
+    "name": "Airport A336",
+    "city": "City A336",
+    "country": "UK",
+    "lat": 41.6471,
+    "lng": 4.3432
+  },
+  {
+    "code": "A337",
+    "name": "Airport A337",
+    "city": "City A337",
+    "country": "Italy",
+    "lat": 59.0119,
+    "lng": 8.8795
+  },
+  {
+    "code": "A338",
+    "name": "Airport A338",
+    "city": "City A338",
+    "country": "Spain",
+    "lat": 41.1043,
+    "lng": -1.3106
+  },
+  {
+    "code": "A339",
+    "name": "Airport A339",
+    "city": "City A339",
+    "country": "Italy",
+    "lat": 54.0847,
+    "lng": 26.2108
+  },
+  {
+    "code": "A340",
+    "name": "Airport A340",
+    "city": "City A340",
+    "country": "Germany",
+    "lat": 35.5444,
+    "lng": 24.7309
+  },
+  {
+    "code": "A341",
+    "name": "Airport A341",
+    "city": "City A341",
+    "country": "France",
+    "lat": 47.2849,
+    "lng": 23.9197
+  },
+  {
+    "code": "A342",
+    "name": "Airport A342",
+    "city": "City A342",
+    "country": "France",
+    "lat": 56.3643,
+    "lng": 9.3512
+  },
+  {
+    "code": "A343",
+    "name": "Airport A343",
+    "city": "City A343",
+    "country": "Germany",
+    "lat": 48.8358,
+    "lng": 17.4667
+  },
+  {
+    "code": "A344",
+    "name": "Airport A344",
+    "city": "City A344",
+    "country": "Italy",
+    "lat": 49.8968,
+    "lng": -6.5261
+  },
+  {
+    "code": "A345",
+    "name": "Airport A345",
+    "city": "City A345",
+    "country": "Spain",
+    "lat": 56.1418,
+    "lng": 20.5156
+  },
+  {
+    "code": "A346",
+    "name": "Airport A346",
+    "city": "City A346",
+    "country": "Germany",
+    "lat": 45.3696,
+    "lng": -9.1108
+  },
+  {
+    "code": "A347",
+    "name": "Airport A347",
+    "city": "City A347",
+    "country": "Spain",
+    "lat": 52.9143,
+    "lng": 6.5062
+  },
+  {
+    "code": "A348",
+    "name": "Airport A348",
+    "city": "City A348",
+    "country": "UK",
+    "lat": 54.1522,
+    "lng": 16.6764
+  },
+  {
+    "code": "A349",
+    "name": "Airport A349",
+    "city": "City A349",
+    "country": "Spain",
+    "lat": 53.5236,
+    "lng": 27.9817
+  },
+  {
+    "code": "A350",
+    "name": "Airport A350",
+    "city": "City A350",
+    "country": "Germany",
+    "lat": 44.1257,
+    "lng": 2.4949
+  },
+  {
+    "code": "A351",
+    "name": "Airport A351",
+    "city": "City A351",
+    "country": "France",
+    "lat": 42.1397,
+    "lng": 3.6954
+  },
+  {
+    "code": "A352",
+    "name": "Airport A352",
+    "city": "City A352",
+    "country": "UK",
+    "lat": 47.2695,
+    "lng": 25.6776
+  },
+  {
+    "code": "A353",
+    "name": "Airport A353",
+    "city": "City A353",
+    "country": "Germany",
+    "lat": 41.9985,
+    "lng": 29.1796
+  },
+  {
+    "code": "A354",
+    "name": "Airport A354",
+    "city": "City A354",
+    "country": "Italy",
+    "lat": 56.5994,
+    "lng": 7.1382
+  },
+  {
+    "code": "A355",
+    "name": "Airport A355",
+    "city": "City A355",
+    "country": "Spain",
+    "lat": 45.7171,
+    "lng": 16.0321
+  },
+  {
+    "code": "A356",
+    "name": "Airport A356",
+    "city": "City A356",
+    "country": "France",
+    "lat": 46.3415,
+    "lng": 12.5894
+  },
+  {
+    "code": "A357",
+    "name": "Airport A357",
+    "city": "City A357",
+    "country": "Germany",
+    "lat": 57.9538,
+    "lng": 15.726
+  },
+  {
+    "code": "A358",
+    "name": "Airport A358",
+    "city": "City A358",
+    "country": "Spain",
+    "lat": 53.5662,
+    "lng": 19.7353
+  },
+  {
+    "code": "A359",
+    "name": "Airport A359",
+    "city": "City A359",
+    "country": "UK",
+    "lat": 37.025,
+    "lng": -8.5856
+  },
+  {
+    "code": "A360",
+    "name": "Airport A360",
+    "city": "City A360",
+    "country": "UK",
+    "lat": 52.0068,
+    "lng": 26.3763
+  },
+  {
+    "code": "A361",
+    "name": "Airport A361",
+    "city": "City A361",
+    "country": "UK",
+    "lat": 40.978,
+    "lng": 23.2993
+  },
+  {
+    "code": "A362",
+    "name": "Airport A362",
+    "city": "City A362",
+    "country": "UK",
+    "lat": 51.641,
+    "lng": 20.179
+  },
+  {
+    "code": "A363",
+    "name": "Airport A363",
+    "city": "City A363",
+    "country": "UK",
+    "lat": 42.4229,
+    "lng": 26.7906
+  },
+  {
+    "code": "A364",
+    "name": "Airport A364",
+    "city": "City A364",
+    "country": "UK",
+    "lat": 59.4136,
+    "lng": 15.8463
+  },
+  {
+    "code": "A365",
+    "name": "Airport A365",
+    "city": "City A365",
+    "country": "Spain",
+    "lat": 59.8557,
+    "lng": -0.2575
+  },
+  {
+    "code": "A366",
+    "name": "Airport A366",
+    "city": "City A366",
+    "country": "Italy",
+    "lat": 40.8099,
+    "lng": 8.0184
+  },
+  {
+    "code": "A367",
+    "name": "Airport A367",
+    "city": "City A367",
+    "country": "UK",
+    "lat": 41.6598,
+    "lng": 25.6033
+  },
+  {
+    "code": "A368",
+    "name": "Airport A368",
+    "city": "City A368",
+    "country": "UK",
+    "lat": 38.5663,
+    "lng": -7.9275
+  },
+  {
+    "code": "A369",
+    "name": "Airport A369",
+    "city": "City A369",
+    "country": "Spain",
+    "lat": 37.9504,
+    "lng": 23.8604
+  },
+  {
+    "code": "A370",
+    "name": "Airport A370",
+    "city": "City A370",
+    "country": "Italy",
+    "lat": 38.8707,
+    "lng": 17.9208
+  },
+  {
+    "code": "A371",
+    "name": "Airport A371",
+    "city": "City A371",
+    "country": "Italy",
+    "lat": 52.1718,
+    "lng": 18.0038
+  },
+  {
+    "code": "A372",
+    "name": "Airport A372",
+    "city": "City A372",
+    "country": "Germany",
+    "lat": 56.0914,
+    "lng": 4.462
+  },
+  {
+    "code": "A373",
+    "name": "Airport A373",
+    "city": "City A373",
+    "country": "France",
+    "lat": 54.4255,
+    "lng": 20.8398
+  },
+  {
+    "code": "A374",
+    "name": "Airport A374",
+    "city": "City A374",
+    "country": "Germany",
+    "lat": 49.8883,
+    "lng": 1.1066
+  },
+  {
+    "code": "A375",
+    "name": "Airport A375",
+    "city": "City A375",
+    "country": "Italy",
+    "lat": 46.4525,
+    "lng": 5.0856
+  },
+  {
+    "code": "A376",
+    "name": "Airport A376",
+    "city": "City A376",
+    "country": "Spain",
+    "lat": 36.2202,
+    "lng": 28.6894
+  },
+  {
+    "code": "A377",
+    "name": "Airport A377",
+    "city": "City A377",
+    "country": "Italy",
+    "lat": 43.6126,
+    "lng": 12.5232
+  },
+  {
+    "code": "A378",
+    "name": "Airport A378",
+    "city": "City A378",
+    "country": "UK",
+    "lat": 47.8407,
+    "lng": 23.6253
+  },
+  {
+    "code": "A379",
+    "name": "Airport A379",
+    "city": "City A379",
+    "country": "UK",
+    "lat": 57.0574,
+    "lng": -9.136
+  },
+  {
+    "code": "A380",
+    "name": "Airport A380",
+    "city": "City A380",
+    "country": "Spain",
+    "lat": 40.4787,
+    "lng": 24.0088
+  },
+  {
+    "code": "A381",
+    "name": "Airport A381",
+    "city": "City A381",
+    "country": "UK",
+    "lat": 39.5827,
+    "lng": 3.0755
+  },
+  {
+    "code": "A382",
+    "name": "Airport A382",
+    "city": "City A382",
+    "country": "Italy",
+    "lat": 49.9655,
+    "lng": -3.1816
+  },
+  {
+    "code": "A383",
+    "name": "Airport A383",
+    "city": "City A383",
+    "country": "UK",
+    "lat": 57.6567,
+    "lng": 29.3855
+  },
+  {
+    "code": "A384",
+    "name": "Airport A384",
+    "city": "City A384",
+    "country": "Germany",
+    "lat": 51.5586,
+    "lng": 7.9323
+  },
+  {
+    "code": "A385",
+    "name": "Airport A385",
+    "city": "City A385",
+    "country": "Italy",
+    "lat": 40.1444,
+    "lng": 28.5914
+  },
+  {
+    "code": "A386",
+    "name": "Airport A386",
+    "city": "City A386",
+    "country": "France",
+    "lat": 51.145,
+    "lng": 18.5934
+  },
+  {
+    "code": "A387",
+    "name": "Airport A387",
+    "city": "City A387",
+    "country": "UK",
+    "lat": 54.2098,
+    "lng": 0.7639
+  },
+  {
+    "code": "A388",
+    "name": "Airport A388",
+    "city": "City A388",
+    "country": "France",
+    "lat": 46.7939,
+    "lng": 29.2006
+  },
+  {
+    "code": "A389",
+    "name": "Airport A389",
+    "city": "City A389",
+    "country": "UK",
+    "lat": 45.5677,
+    "lng": 23.3085
+  },
+  {
+    "code": "A390",
+    "name": "Airport A390",
+    "city": "City A390",
+    "country": "Italy",
+    "lat": 40.3742,
+    "lng": 21.2996
+  },
+  {
+    "code": "A391",
+    "name": "Airport A391",
+    "city": "City A391",
+    "country": "UK",
+    "lat": 55.5503,
+    "lng": -4.8502
+  },
+  {
+    "code": "A392",
+    "name": "Airport A392",
+    "city": "City A392",
+    "country": "Italy",
+    "lat": 48.5617,
+    "lng": -1.5576
+  },
+  {
+    "code": "A393",
+    "name": "Airport A393",
+    "city": "City A393",
+    "country": "Spain",
+    "lat": 56.0799,
+    "lng": 10.6552
+  },
+  {
+    "code": "A394",
+    "name": "Airport A394",
+    "city": "City A394",
+    "country": "France",
+    "lat": 51.3104,
+    "lng": 27.7314
+  },
+  {
+    "code": "A395",
+    "name": "Airport A395",
+    "city": "City A395",
+    "country": "Italy",
+    "lat": 51.2485,
+    "lng": 27.9024
+  }
+]
