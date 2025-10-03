@@ -1,0 +1,210 @@
+@import "leaflet/dist/leaflet.css";
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.app-container {
+  display: flex;              /* sidebar + mapa al costado */
+  height: 100vh;              /* que ocupe toda la pantalla */
+  overflow: hidden;
+}
+.main {
+  flex: 1;                    /* ocupa todo el espacio restante */
+  height: 100vh;
+}
+/* Sidebar */
+.sidebar {
+  width: 320px;               /* ancho fijo */
+  height: 100vh;              /* mismo alto que el mapa */
+  overflow-y: auto; 
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* efecto glass */
+  backdrop-filter: blur(8px);
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0450bb;
+  text-align: center;
+}
+
+.sidebar label {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.sidebar .input, 
+.sidebar select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.sidebar .input:focus, 
+.sidebar select:focus {
+  border-color: #0450bb;
+  box-shadow: 0 0 5px rgba(230, 57, 70, 0.4);
+}
+
+.sidebar button {
+  background: #0450bb;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.sidebar button:hover {
+  background: #033e91;
+}
+
+/* Caja de ruta */
+.ruta-box {
+  margin-top: 15px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.ruta-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.ruta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ruta-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-size: 14px;
+}
+
+.ruta-icon {
+  font-size: 18px;
+}
+
+.ruta-costo {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #0450bb;
+  font-size: 15px;
+}
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.dark-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* ===================== DARK MODE ===================== */
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .sidebar {
+  background: rgba(18, 18, 18, 0.9);
+  border-right: 1px solid #333;
+  box-shadow: 2px 0 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .sidebar h1 {
+  color: #4dabf7;
+}
+
+body.dark-mode .sidebar label {
+  color: #ddd;
+}
+
+body.dark-mode .sidebar .input,
+body.dark-mode .sidebar select {
+  background: #1e1e1e;
+  border: 1px solid #444;
+  color: #eee;
+}
+
+body.dark-mode .sidebar .input:focus,
+body.dark-mode .sidebar select:focus {
+  border-color: #4dabf7;
+  box-shadow: 0 0 5px rgba(77, 171, 247, 0.4);
+}
+
+body.dark-mode .sidebar button {
+  background: #4dabf7;
+  color: black;
+}
+
+body.dark-mode .sidebar button:hover {
+  background: #339af0;
+}
+
+body.dark-mode .ruta-box {
+  background: #1e1e1e;
+  border: 1px solid #333;
+}
+
+body.dark-mode .ruta-box h2 {
+  color: #fff;
+}
+
+body.dark-mode .ruta-item {
+  background: #2a2a2a;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .ruta-costo {
+  color: #4dabf7;
+}
