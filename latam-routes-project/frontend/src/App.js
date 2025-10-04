@@ -30,13 +30,13 @@ function App() {
       .catch((err) => console.error("Error calculando ruta:", err));
   };
 
-  // Toggle Dark Mode
+  //darkmode
   const toggleDarkMode = () => {
     document.body.classList.toggle("dark-mode");
     setDarkMode(!darkMode);
   };
 
-  // Coordenadas de la ruta
+  //coordsdelaruta
   const rutaCoords =
     ruta && ruta.ruta
       ? ruta.ruta.map((code) => {
@@ -45,7 +45,7 @@ function App() {
         })
       : [];
 
-  // Íconos
+  //icons
   const defaultIcon = new L.Icon({
     iconUrl: "https://cdn-icons-png.flaticon.com/512/854/854878.png",
     iconSize: [32, 32],
@@ -71,7 +71,7 @@ function App() {
 
   return (
     <div className="app-container">
-      {/* Sidebar */}
+      {/*sidebar*/}
       <div className="sidebar">
         <div className="sidebar-header">
           <h1>✈️ LATAM Airlines Peru S.A.</h1>
@@ -140,7 +140,7 @@ function App() {
         )}
       </div>
 
-      {/* Mapa */}
+      {/*mapa*/}
       <div className="main">
         <MapContainer center={[-12.0219, -77.1143]} zoom={3}>
           <TileLayer

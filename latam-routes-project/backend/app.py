@@ -10,16 +10,14 @@ import random
 app = Flask(__name__)
 CORS(app)
 
-# Grafo dirigido
+#grafodirigido
 G = nx.DiGraph()
 
-# -----------------------------
-# Ruta absoluta del JSON
-# -----------------------------
+#rutabsjson
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ruta_json = os.path.join(BASE_DIR, "data", "airports.json")
 
-# Fórmula Haversine (km entre coordenadas)
+#formhaversine(km entre coordenadas) 
 def haversine(lat1, lon1, lat2, lon2):
     R = 6371
     dlat = radians(lat2 - lat1)
@@ -28,9 +26,7 @@ def haversine(lat1, lon1, lat2, lon2):
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
     return R * c
 
-# -----------------------------
-# Función para cargar aeropuertos
-# -----------------------------
+#funcionparacargarlosaeropuertos
 def cargar_aeropuertos():
     if not os.path.exists(ruta_json):
         raise FileNotFoundError(f"No se encontró el archivo: {ruta_json}")
@@ -39,13 +35,11 @@ def cargar_aeropuertos():
         datos = json.load(f)
     return datos
 
-# -----------------------------
-# Función para construir grafo
-# -----------------------------
+#funcionparaconstruirlosgrafos
 def construir_grafo(airports_data):
     G.clear()
 
-    # Agregar nodos
+    #agregarnodos
     for airport in airports_data:
         G.add_node(
             airport["code"],
@@ -56,26 +50,22 @@ def construir_grafo(airports_data):
             lng=airport["lng"]
         )
 
-    # Crear rutas realistas con haversine
+    #crearrutasconhaversine
     codes = [a["code"] for a in airports_data]
     for origen in airports_data:
         posibles_destinos = [a for a in airports_data if a["code"] != origen["code"]]
-        destinos = random.sample(posibles_destinos, k=min(5, len(posibles_destinos)))  # hasta 5 rutas por aeropuerto
+        destinos = random.sample(posibles_destinos, k=min(5, len(posibles_destinos)))  #hasta5rutasporaeropuerto
         for destino in destinos:
             km = haversine(origen["lat"], origen["lng"], destino["lat"], destino["lng"])
-            horas = round(km / 850, 2)  # promedio avión comercial ~850 km/h
+            horas = round(km / 850, 2)  #promedioavion ~850 km/h
             G.add_edge(origen["code"], destino["code"], km=round(km, 2), horas=horas)
 
-# -----------------------------
-# Inicializar datos
-# -----------------------------
+#inicializardatos
 airports_data = cargar_aeropuertos()
 ultimo_mod = os.path.getmtime(ruta_json)
 construir_grafo(airports_data)
 
-# -----------------------------
-# Endpoints
-# -----------------------------
+#endpoints
 @app.route("/airports", methods=["GET"])
 def get_airports():
     return jsonify(airports_data)
@@ -84,7 +74,7 @@ def get_airports():
 def get_route():
     global airports_data, ultimo_mod
 
-    # Verificar si JSON cambió
+    #verificamoseljson
     mod_actual = os.path.getmtime(ruta_json)
     if mod_actual != ultimo_mod:
         print("[INFO] airports.json modificado, recargando datos...")
