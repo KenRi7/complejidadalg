@@ -1,38 +1,235 @@
-.App {
-  text-align: center;
+/* === LAYOUT GENERAL === */
+.layout {
+  display: flex;
+  height: 100vh;
+  background: #f8f9fa;
+  font-family: "Inter", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
+/* === SIDEBAR === */
+.sidebar {
+  width: 340px;
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 3px 0 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #14213d;
+  margin: 0;
+}
+
+.sidebar-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-top: -8px;
+}
+
+/* === INPUTS === */
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #14213d;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  background: #fff;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+select:hover {
+  border-color: #14213d;
+}
+
+/* === BOTÓN === */
+.btn-calc {
+  padding: 14px;
+  background: #e63946;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.btn-calc:hover {
+  background: #b61d2b;
+}
+
+/* === RESULTADOS === */
+.result-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 5px solid #14213d;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result-card.error {
+  border-left-color: #e63946;
+}
+
+.animate {
+  animation: fadeIn 0.5s ease;
+}
+
+.result-path {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.result-cost {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+/* === ANIMACIONES === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* === TOGGLE SWITCH === */
+/* Centrado debajo del título */
+.theme-toggle-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: -30px;   /* más cerca del título */
+  margin-bottom: -4px; /* más cerca del subtítulo */
+}
+
+
+.theme-toggle-input {
+  display: none;
+}
+
+.theme-toggle-label {
+  width: 64px;
+  height: 32px;
+  background: #ddd;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7px;
+}
+
+.toggle-icon {
+  z-index: 2;
+  font-size: 14px;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sun {
+  color: #f4c430;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.moon {
+  color: #8ab4f8;
+}
+
+.toggle-ball {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.theme-toggle-input:checked + .theme-toggle-label {
+  background: #2b2b2b;
+}
+
+.theme-toggle-input:checked + .theme-toggle-label .toggle-ball {
+  transform: translateX(32px);
+}
+
+/* === DARK MODE === */
+body.dark {
+  background: #0d1117;
+}
+
+/* Sidebar */
+body.dark .sidebar {
+  background: #161b22;
+  color: white;
+  box-shadow: 3px 0 12px rgba(255,255,255,0.05);
+}
+
+body.dark .sidebar-title {
+  color: #fff;
+}
+
+body.dark .sidebar-subtitle {
+  color: #bbb;
+}
+
+/* Inputs */
+/* SELECT en modo oscuro */
+body.dark select {
+  background: #0f1419 !important;
+  color: #e6eef8 !important;
+  border-color: #555;
+}
+body.dark .input-group label {
+  color: #e6eef8;
+}
+
+/* OPCIONES del menu */
+body.dark select option {
+  background: #0f1419;
+  color: #e6eef8;
+}
+
+/* Botón */
+body.dark .btn-calc {
+  background: #e63946;
+}
+
+body.dark .btn-calc:hover {
+  background: #b61d2b;
+}
+
+/* Result cards */
+body.dark .result-card {
+  background: #1c2128;
+  border-left-color: #4ea8de;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body.dark .result-card.error {
+  border-left-color: #e63946;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Mapa */
+body.dark .leaflet-container {
+  filter: brightness(0.7) contrast(1.1);
 }

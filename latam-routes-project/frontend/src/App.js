@@ -1,8 +1,26 @@
 import React, { useState, useEffect } from "react";
-import { MapContainer, TileLayer, Marker, Popup, Polyline } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup,
+  Polyline,
+  useMap,
+} from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import "./index.css";
+import "./App.css";
+
+// Fix de íconos Leaflet
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl:
+    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png",
+  iconUrl:
+    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
+  shadowUrl:
+    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
+});
 
 function App() {
   const [airports, setAirports] = useState([]);
@@ -10,165 +28,227 @@ function App() {
   const [destino, setDestino] = useState("");
   const [criterio, setCriterio] = useState("km");
   const [ruta, setRuta] = useState(null);
-  const [darkMode, setDarkMode] = useState(false);
+  const [loading, setLoading] = useState(false);
+// Leer el tema guardado al cargar la app
+useEffect(() => {
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark");
+
+    const toggle = document.getElementById("theme-toggle");
+    if (toggle) toggle.checked = true;
+  }
+}, []);
+
+// Manejar cambio de tema
+const toggleDark = () => {
+  document.body.classList.toggle("dark");
+
+  const darkMode = document.body.classList.contains("dark");
+  localStorage.setItem("theme", darkMode ? "dark" : "light");
+};
 
   useEffect(() => {
     fetch("http://localhost:5000/airports")
       .then((res) => res.json())
-      .then((data) => setAirports(data))
-      .catch((err) => console.error("Error cargando aeropuertos:", err));
+      .then((data) => setAirports(data));
   }, []);
 
   const calcularRuta = () => {
+    setLoading(true);
+    setRuta(null);
+
     fetch("http://localhost:5000/route", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ origen, destino, criterio }),
     })
       .then((res) => res.json())
-      .then((data) => setRuta(data))
-      .catch((err) => console.error("Error calculando ruta:", err));
+      .then((data) => {
+        setRuta(data);
+        setLoading(false);
+      });
   };
 
-  //darkmode
-  const toggleDarkMode = () => {
-    document.body.classList.toggle("dark-mode");
-    setDarkMode(!darkMode);
-  };
-
-  //coordsdelaruta
   const rutaCoords =
-    ruta && ruta.ruta
-      ? ruta.ruta.map((code) => {
-          const a = airports.find((ap) => ap.code === code);
-          return [a.lat, a.lng];
-        })
-      : [];
+    ruta?.ruta
+      ?.map((code) => {
+        const a = airports.find((ap) => ap.code === code);
+        return a ? [a.lat, a.lng] : null;
+      })
+      .filter(Boolean) || [];
 
-  //icons
+  // Íconos pro
   const defaultIcon = new L.Icon({
     iconUrl: "https://cdn-icons-png.flaticon.com/512/854/854878.png",
-    iconSize: [32, 32],
-    iconAnchor: [16, 32],
-    popupAnchor: [0, -30],
+    iconSize: [28, 28],
+    iconAnchor: [14, 28],
   });
 
   const origenIcon = new L.Icon({
-    iconUrl: "https://cdn-icons-png.flaticon.com/512/149/149060.png",
-    iconSize: [36, 36],
-    iconAnchor: [18, 36],
-    popupAnchor: [0, -30],
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/3177/3177363.png",
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
   });
 
   const destinoIcon = new L.Icon({
-    iconUrl: "https://cdn-icons-png.flaticon.com/512/149/149059.png",
-    iconSize: [36, 36],
-    iconAnchor: [18, 36],
-    popupAnchor: [0, -30],
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/3177/3177393.png",
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
   });
 
-  const getAirportInfo = (code) => airports.find((a) => a.code === code);
+  function FitBounds() {
+    const map = useMap();
+    useEffect(() => {
+      if (rutaCoords.length > 1) {
+        map.fitBounds(rutaCoords, { padding: [40, 40] });
+      }
+    }, [rutaCoords]);
+    return null;
+  }
 
   return (
-    <div className="app-container">
-      {/*sidebar*/}
-      <div className="sidebar">
-        <div className="sidebar-header">
-          <h1>✈️ LATAM Airlines Peru S.A.</h1>
-          <button className="dark-toggle" onClick={toggleDarkMode}>
-            {darkMode ? "☀️" : "🌙"}
-          </button>
+    <div className="layout">
+      {/* PANEL LATERAL MODERNO */}
+      <aside className="sidebar">
+      <h1 className="sidebar-title">LATAM Route Finder</h1>
+
+{/* Toggle debajo del título */}
+<div className="theme-toggle-container">
+  <input
+    type="checkbox"
+    id="theme-toggle"
+    className="theme-toggle-input"
+    onChange={toggleDark}
+  />
+  <label htmlFor="theme-toggle" className="theme-toggle-label">
+    <span className="toggle-icon sun">☀️</span>
+    <span className="toggle-icon moon">🌙</span>
+    <span className="toggle-ball"></span>
+  </label>
+</div>
+
+<p className="sidebar-subtitle">
+  Encuentra la mejor ruta entre aeropuertos reales ✈
+</p>
+
+
+        <div className="input-group">
+          <label>🛫 Origen</label>
+          <select value={origen} onChange={(e) => setOrigen(e.target.value)}>
+            <option value="">Seleccionar origen</option>
+            {airports
+              .sort((a, b) => a.code.localeCompare(b.code))
+              .map((a) => (
+                <option key={a.code} value={a.code}>
+                  {a.code} — {a.city}
+                </option>
+              ))}
+          </select>
+        </div>
+        <div className="input-group">
+          <label>🛬 Destino</label>
+          <select value={destino} onChange={(e) => setDestino(e.target.value)}>
+            <option value="">Seleccionar destino</option>
+            {airports
+              .sort((a, b) => a.code.localeCompare(b.code))
+              .map((a) => (
+                <option key={a.code} value={a.code}>
+                  {a.code} — {a.city}
+                </option>
+              ))}
+          </select>
         </div>
 
-        <label>Origen</label>
-        <select onChange={(e) => setOrigen(e.target.value)} value={origen}>
-          <option value="">Seleccionar</option>
-          {airports.map((a) => (
-            <option key={a.code} value={a.code}>
-              {a.code} - {a.city}
-            </option>
-          ))}
-        </select>
+        <div className="input-group">
+          <label>⚙ Criterio</label>
+          <select
+            value={criterio}
+            onChange={(e) => setCriterio(e.target.value)}
+          >
+            <option value="km">Distancia (km)</option>
+            <option value="horas">Tiempo (horas)</option>
+          </select>
+        </div>
 
-        <label>Destino</label>
-        <select onChange={(e) => setDestino(e.target.value)} value={destino}>
-          <option value="">Seleccionar</option>
-          {airports.map((a) => (
-            <option key={a.code} value={a.code}>
-              {a.code} - {a.city}
-            </option>
-          ))}
-        </select>
-
-        <label>Criterio</label>
-        <select onChange={(e) => setCriterio(e.target.value)} value={criterio}>
-          <option value="km">Distancia (km)</option>
-          <option value="horas">Tiempo (horas)</option>
-        </select>
-
-        <button onClick={calcularRuta} disabled={!origen || !destino}>
-          Calcular Ruta
+        <button
+          className="btn-calc"
+          onClick={calcularRuta}
+          disabled={!origen || !destino}
+        >
+          {loading ? "Calculando..." : "Calcular Ruta"}
         </button>
 
         {ruta && !ruta.error && (
-          <div className="ruta-box">
-            <h2>Ruta Calculada:</h2>
-            <div className="ruta-list">
-              {ruta.ruta.map((code) => {
-                const airport = getAirportInfo(code);
-                return (
-                  <div key={code} className="ruta-item">
-                    <span className="ruta-icon">✈️</span>
-                    <div>
-                      <b>{code}</b> - {airport?.city} ({airport?.country})
-                    </div>
-                  </div>
-                );
-              })}
+          <div className="result-card animate">
+            <h3>Ruta encontrada</h3>
+
+            <div className="result-path">
+              {ruta.ruta.map((code, i) => (
+                <span key={code}>
+                  {code}
+                  {i < ruta.ruta.length - 1 && " → "}
+                </span>
+              ))}
             </div>
-            <p className="ruta-costo">
-              {ruta.criterio}: {ruta.costo.toFixed(2)}
+
+            <p className="result-cost">
+              <strong>Total:</strong> {ruta.costo}{" "}
+              {criterio === "km" ? "km" : "horas"}
             </p>
           </div>
         )}
 
-        {ruta && ruta.error && (
-          <div className="ruta-box">
-            <h2>Error</h2>
+        {ruta?.error && (
+          <div className="result-card error animate">
+            <h3>Error</h3>
             <p>{ruta.error}</p>
           </div>
         )}
-      </div>
+      </aside>
 
-      {/*mapa*/}
-      <div className="main">
-        <MapContainer center={[-12.0219, -77.1143]} zoom={3}>
+      {/* MAPA */}
+      <main className="main">
+        <MapContainer
+          center={[-15, -60]}
+          zoom={4}
+          style={{ height: "100vh", width: "100%" }}
+        >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; OpenStreetMap contributors'
+            attribution="&copy; OpenStreetMap contributors"
           />
 
           {airports.map((a) => {
-            let iconToUse = defaultIcon;
-            if (a.code === origen) iconToUse = origenIcon;
-            if (a.code === destino) iconToUse = destinoIcon;
+            let icon = defaultIcon;
+            if (a.code === origen) icon = origenIcon;
+            if (a.code === destino) icon = destinoIcon;
 
             return (
-              <Marker key={a.code} position={[a.lat, a.lng]} icon={iconToUse}>
+              <Marker key={a.code} position={[a.lat, a.lng]} icon={icon}>
                 <Popup>
-                  <b>{a.name}</b>
+                  <strong>{a.name}</strong>
                   <br />
-                  {a.city}, {a.country}
-                  <br />
-                  <i>Código: {a.code}</i>
+                  {a.city}, {a.country} <br />
+                  <em>{a.code}</em>
                 </Popup>
               </Marker>
             );
           })}
 
-          {rutaCoords.length > 1 && <Polyline positions={rutaCoords} color="red" />}
+          {rutaCoords.length > 1 && (
+            <Polyline
+              positions={rutaCoords}
+              color="#E63946"
+              weight={5}
+              opacity={0.9}
+            />
+          )}
+
+          <FitBounds />
         </MapContainer>
-      </div>
+      </main>
     </div>
   );
 }
